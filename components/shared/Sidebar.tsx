@@ -13,8 +13,9 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo">
+        <Link href="/" className="sidebar-logo top-0">
           <Image
+            className="top-0"
             src="/assets/images/logo-text.svg"
             alt="logo"
             width={180}
@@ -86,7 +87,7 @@ const Sidebar = () => {
           </SignedIn>
 
           <SignedOut>
-            <Button asChild className="button bg-purple-gradient bg-cover">
+            <Button asChild className="button bg-cover">
               <Link href="/sign-in">Login</Link>
             </Button>
           </SignedOut>
